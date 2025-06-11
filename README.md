@@ -1,6 +1,13 @@
-# titanic_api
-API взаимодействие с моделью
+# Titanic API
 
-Запустим сервис titanic-service:
-docker build -t titanic-service:latest .
-docker run -d --name titanic-service -p 500:5000 titanic-service:latest
+Простой API для анализа данных пассажиров Титаника.
+
+## Возможности
+
+- Предсказание выжил или нет на титанике.
+
+## Установка
+
+```bash
+docker compose up -d
+```

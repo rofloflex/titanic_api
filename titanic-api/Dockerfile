@@ -11,11 +11,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Сначала копируем только requirements.txt и устанавливаем зависимости
-COPY ./requirements.txt /app/
+COPY ./titanic-api/requirements.txt /app
 RUN pip3 install -r requirements.txt
 
 # Копируем файлы проекта
-COPY . /app
+COPY ./titanic-api /app
 
 # Команда по умолчанию при запуске контейнера
-CMD ["python", "app_api.py"]
+CMD ["python3", "app_api.py"]

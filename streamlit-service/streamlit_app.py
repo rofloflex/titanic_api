@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from requests.exceptions import ConnectionError
 
-ip_api = "127.0.0.1"
+ip_api = "titanic-api"  # IP адрес или имя хоста Flask API
 port_api = "5000"
 
 # Заголовок приложния
